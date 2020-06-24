@@ -1,0 +1,349 @@
+/* 全体のCSS */
+body{
+  margin: 0;
+  font-family: Noto Sans CJK JP;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  margin: 0 auto;
+  width: 980px;
+}
+
+/* ヘッダーのCSS */
+header{
+  height: 793px;
+  width: auto;
+  background-color: #F2F3F7;
+}
+
+.top{
+  background: url("../img/メインビジュアル.png") no-repeat center bottom;
+  background-size: cover;
+  height: 832px;
+}
+
+.header-list{
+  display: flex;
+  background-color: #fff;
+  position: absolute;
+  top: 59px;
+  width: 975px;
+  height:77px;
+  box-shadow: 4px 4px #00000029;
+  align-items: center;
+}
+
+.header-list img{
+  width: 168px;
+  height: 34px;
+  margin-left: 37px;
+  vertical-align: middle;
+}
+
+.header-list ul{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 100px;
+  position: relative;
+}
+
+.header-list li{
+  margin-right: 15px;
+}
+
+.li_about::after{
+  content: "企業情報";
+  display: block;
+  color: #777777;
+  font-size: 10px;
+  margin-left: 25px;
+}
+
+.li_news::after{
+  content: "ニュース";
+  display: block;
+  color: #777777;
+  font-size: 10px;
+  margin-left: 25px;
+}
+
+.li_service::after{
+  content: "サービス＆製品情報";
+  display: block;
+  color: #777777;
+  font-size: 10px;
+  margin-left: 45px;
+}
+
+.li_contact::after{
+  content: "お問い合わせ";
+  display: block;
+  color: #777777;
+  font-size: 10px;
+  margin-left: 25px;
+}
+
+.header-list li + li:before{
+  border-left: 1px solid #000;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 8px;
+}
+
+.header-list a{
+  display: block;
+  color: #000;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+/* メインのCSS */
+main {
+  color: #333;
+}
+
+main h1{
+  font-size: 43px;
+  position: relative;
+}
+
+main h1::before{
+  content: "!";
+  color: #D4004E;
+  font-size: 60px;
+  position: absolute;
+  top: -10px;
+  left: -30px;
+}
+
+.btn{
+ display: block;
+ background-color: #D4004E;
+ text-decoration: none;
+ box-sizing: border-box;
+ padding: 10px 5px 10px 40px;
+ width: 157px;
+ height: 36px;
+ text-align: center;
+ margin:0 auto;
+ color: #fff;
+}
+
+/* aboutセクションのCSS */
+.p_about{
+  position: relative;
+  margin-top: 150px;
+}
+
+.p_about p{
+  background: #F2F3F7;
+  padding: 66px 55px 63px 66px;
+  line-height: 52px;
+  margin-top: 0;
+}
+
+.title{
+  position:absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%)
+}
+
+.corp_info{
+  position:absolute;
+  top: 265px;
+  left: 390px;
+}
+
+/* サービスセクションのCSS */
+.p_service{
+  margin-top: 150px;
+}
+
+.service-intro{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 74px;
+  margin-top: 90px;
+}
+
+.service-intro:nth-child(odd){
+  flex-direction: row-reverse;
+}
+
+.pic{
+  width: 490px;
+  height: 264px;
+  border: 1px solid #707070;
+}
+
+.pic img{
+  display: block;
+  width: 280px;
+  height: 120px;
+  margin: 60px auto;
+}
+
+.iot img{
+  width: 114px;
+  height: 41px;
+  margin-top: 120px;
+}
+
+.content{
+  text-align: left;
+}
+
+.content h2{
+  color: #D4004E;
+  font-size: 20px;
+}
+
+.content p{
+  width: 330px;
+  height: 64px;
+  font-size: 13px;
+}
+
+.detail{
+  font-size: 13px;
+  width: 190px;
+}
+
+/* ニュースセクションのCSS */
+.p_news{
+  position: relative;
+  margin-top: 150px;
+}
+
+.service-name{
+  box-sizing: border-box;
+  width: 159px;
+  font-size: 12px;
+}
+
+.yellow{
+  color: #E5A31C;
+  border: 1px solid #E5A31C;
+}
+
+.red{
+  color: #D4004E;
+  border: 1px solid #D4004E;
+}
+
+.green{
+  color: #5FA153;
+  border: 1px solid #5FA153;
+}
+
+.blue{
+  color: #50BBF4;
+  border: 1px solid #50BBF4;
+}
+
+article{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.p_news li{
+  background: #F2F3F7;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-align: center;
+  height: 86px;
+  align-items: center;
+  padding: 0 20px;
+  list-style: none;
+}
+
+time{
+  font-size: 13px;
+  position: relative;
+}
+
+time::after{
+  border-right: 1px solid #000;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 90px;
+  height: 20px;
+}
+
+.all{
+  margin-top: 60px;
+}
+
+/* フッターのCSS */
+footer{
+  background: #333333;
+  margin-top: 100px;
+  margin-bottom: 0;
+  width: 100%;
+  height: 261px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer-list{
+  display: inline-block;
+  text-align: center;
+}
+
+.footer-list li + li:before{
+  border-left: 1px solid #fff;
+  display: block;
+  content: "";
+  position: relative;
+  top: 12px;
+  right: 10px;
+  height: 8px;
+}
+
+footer li{
+  display: inherit;
+  list-style: none;
+  font-size: 10px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+footer a{
+  color: #fff;
+  display: block;
+}
+
+.share{
+  font-weight: bold;
+  margin: 0;
+}
+
+i{
+  margin: 0;
+  padding: 10px;
+}
+
+.to_face{
+  background: #FFFFFF;
+  color: #333333;
+  font-size: 13px;
+  padding: 12px 6px;
+  margin-top: 20px;
+}
+
+footer p{
+  font-size: 9px;
+  margin-top: 20px;
+}
